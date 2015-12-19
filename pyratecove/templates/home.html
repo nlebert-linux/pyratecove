@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block extra-head %}
+    <link href="{% static 'css/home.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+{% endblock extra-head %}
+
+{% block content %}
+    <div class="parallax-container valign-wrapper">
+        
+        <div class="container section-block">
+            <div class="row">
+                <h1 class="header center white-text">Welcome to The Cove!</h1>
+                <h5 class="header center white-text">Want to hire me? Ask me a question?</h5>
+            </div>
+
+            <div class="row center">
+                <a href="mailto:nlebert.linux@gmail.com" class="btn header">Contact me!</a>
+            </div>
+        </div>
+
+        <div class="parallax">
+            <img src="{{ MEDIA_URL }}text1.png" >
+        </div>
+
+    </div>
+
+    <div class="container">
+        
+        <div class="section section-block light-primary-color">
+            
+            <div class="row">
+                
+                <div class="col s12 m4">
+                    
+                    <h2 class="center grey-text">
+                        <i class="material-icons medium accent-color">schedule</i>
+                    </h2>
+
+                    <h5 class="center primary-text">On Time Delivery</h5>
+                    <p class="secondary-text">
+                        We all know life will try and throw us for a loop occasionally; 
+                        kids, significant others, family emergencies, or just bad scheduling, 
+                        things get in the way. That being said, I strive to deliver results early 
+                        or on time. I'm not a robot, but I do try to be when working.
+                    </p>
+
+                </div>
+
+                <div class="col s12 m4">
+                    
+                    <h2 class="center grey-text">
+                        <i class="material-icons medium accent-color">settings</i>
+                    </h2>
+
+                    <h5 class="center primary-text">Problem Solving</h5>
+                    <p class="secondary-text">
+                        I'm a problem solver by nature. I started out obsessed with puzzles 
+                        and legos when I was young; eventually that got a bit too easy, so I 
+                        moved on to Computing. The path I've been taking for the past 16+ years 
+                        has been an endless source of problems to solve for me. I have done 
+                        everything from Linux and Windows Systems Administration, DevOps, to full 
+                        stack Web Development. If you have a problem, I want to solve it.
+                    </p>
+
+                </div>
+
+                <div class="col s12 m4">
+                    
+                    <h2 class="center grey-text">
+                        <i class="material-icons medium accent-color">flash_on</i>
+                    </h2>
+
+                    <h5 class="center primary-text">Cutting Edge Technology</h5>
+                    <p class="secondary-text">
+                        My favorite hobby is being on the forefront of technology. Currently, 
+                        I'm running Ubuntu 16.04 with all my favorite bleeding edge PPAs. This 
+                        website was developed using HTML5, CSS3 &amp; SASS, and the latest 
+                        release of Python/Django. If you like having the latest and greatest, 
+                        We'll get along great.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="parallax-container valign-wrapper">
+        <div class="container section-block">
+            <div class="row">
+                <h5 class="header center white-text">"I'm a problem solver by nature."</h5>
+            </div>
+        </div>
+
+        <div class="parallax">
+            <img src="{{ MEDIA_URL }}text2.png" >
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="section section-block light-primary-color">
+            
+            <div class="row">
+                
+                <div class="col s12 center">
+                    
+                    <h3>
+                        <i class="material-icons medium accent-color">email</i>
+                    </h3>
+
+                    <h5 class="primary-text">Contact Me!</h5>
+                    <p class="secondary-text">
+                        Have I interested you? Drop me a line and let me know if we'd be a good fit! 
+                        You can either <a href="mailto:nlebert.linux@gmail.com">email me</a> or send 
+                        a message <a href="#">here</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+{% endblock content %}

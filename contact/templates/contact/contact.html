@@ -1,0 +1,51 @@
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+
+{% block extra-head %}
+    <link href="{% static 'css/contact.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+{% endblock extra-head %}
+
+{% block content %}
+<div class="parallax-container valign-wrapper">
+    
+    <div class="parallax">
+        <img src="{{ post.header.url }}">
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="row">
+        
+        <div class="col s12 m6">
+            
+            <h5 class="primary-text">Still with me?</h5>
+            <p class="secondary-text">
+                Cool. Want to offer a position? Let me know about an open position? 
+                Want to ask why I avoided as much javascript as possible on this site? 
+                Just want to talk in general? Go ahead and fill out the form to the right 
+                and be sure to leave a message!
+            </p>
+
+        </div>
+
+        <div class="col s12 m6">
+            <div class="divider"></div>
+            <div class="section center">
+                {% if message %}
+                <p class="secondary-text">
+                    Thanks for getting in touch! I'll get back to you as soon as I can!
+                </p>
+                {% else %}
+                <form action="{% url 'contact:contact' %}" method="POST">
+                {% csrf_token %}
+                {{ contactform }}
+                <button class="btn" type="submit">Submit</button>
+                </form>
+                {% endif %}
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock content %}
