@@ -1,0 +1,10 @@
+nav {
+    background-color: #455A64 !important;
+    color: #FFFFFF;
+}
+
+nav #logo-container img {
+    height: 50px;
+    width: 50px;
+    padding: 5px 5px;
+}

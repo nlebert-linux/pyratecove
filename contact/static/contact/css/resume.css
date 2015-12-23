@@ -1,0 +1,11 @@
+main ul li {
+    list-style-type: disc;
+    margin-left: 15px;
+    padding: 5px 0;
+}
+
+main ul li.no-style {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0;
+}

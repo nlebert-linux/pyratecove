@@ -17,3 +17,7 @@ def contact(request):
         context = {'contactform': contact_form}
 
     return render(request, 'contact/contact.html', context)
+
+
+def resume(request):
+    return render(request, 'contact/resume.html')

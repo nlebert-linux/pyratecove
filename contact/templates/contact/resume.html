@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block extra-head %}
+    <link href="{% static 'contact/css/resume.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+{% endblock extra-head %}
+
+{% block content %}
+<div class="parallax-container valign-wrapper">
+
+    <div class="container section-block">
+        <div class="row">
+            <h1 class="header center white-text">Pedigree</h1>
+        </div>
+    </div>
+    
+    <div class="parallax">
+        <img src="{{ MEDIA_URL }}old_computers.jpg">
+    </div>
+
+</div>
+
+<div class="container section-block">
+    <div class="row">
+        
+        <div class="col s12 m3">
+            
+            <h5 class="primary-text">Nathan LeBert</h5>
+            <p class="secondary-text">
+                <a href="mailto:nlebert.linux@gmail.com">Email</a><br>
+                <a href="https://github.com/nlebert-linux" target="_blank">Github</a>
+            </p>
+            <div class="divider"></div>
+
+            <p class="accent-color">Skills</p>
+            <ul class="secondary-text">
+                <li class="no-style">Python</li>
+                <li class="no-style">Django</li>
+                <li class="no-style">JavaScript</li>
+                <li class="no-style">HTML5</li>
+                <li class="no-style">CSS3/SASS</li>
+                <li class="no-style">PostgreSQL</li>
+            </ul>
+
+        </div>
+
+        <div class="col s12 m9 right">
+            <h5 class="accent-color">Experience</h5>
+
+            <div class="section">
+                <h5>Full Stack Web Developer, Mill Creek Software, Inc</h5>
+                <h6 class="secondary-text">Rogers, Arkansas — November 2014 ­to December 2015</h6>
+                <p class="secondary-text">
+                    Develop websites designed in Adobe Creative Suite by sister company using 
+                    Django/Python and Postgresql for the backend. Front end was developed using
+                    a combination of Bootstrap/jQuery, vanilla js for custom features, and 
+                    SASS/LESS for data presentation layer.
+                </p>
+                <p class="primary-text">Accomplishments</p>
+                <ul class="secondary-text">
+                    <li>
+                        Completed site redesigns on both small and large accounts for 
+                        business sites such as Houndstooth Press, Tyson, HillShire Farms, 
+                        and BallPark franks.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="section">
+                <h5 class="primary-text">DevOps, HP</h5>
+                <h6 class="secondary-text">Bentonville, Arkansas ​— ​May 2014 ​to November 2014</h6>
+                <p class="secondary-text">
+                    Level 2 help desk during hardware/software refresh projects including 
+                    Microsoft cluster configurations, CISCO/Juniper deployments.
+                </p>
+                <p class="primary-text">Accomplishments</p>
+                <ul class="secondary-text">
+                    <li>
+                        Created front­ end for Sharepoint using Python/CherryPy that was tailored to 
+                        the workflow of refresh projects. Included Ajax and Websockets along with 
+                        sqlite backend. 
+                    </li>
+
+                    <li>
+                        Created statistics reporting portal for long term level 2 helpdesk support 
+                        of major HP client. Using Cherrypy/sqlite as backend, Javascript/CSS as 
+                        front end.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="section">
+                <h5 class="primary-text">Systems Administrator, IBM</h5>
+                <h6 class="secondary-text">Bentonville, Arkansas ​— June 2013 ­to May 2014</h6>
+                <p class="secondary-text">
+                    First point of contact for clients through REMEDY 7 tickets and voice calls. 
+                    Troubleshoot general backend server issues on a range of operating systems
+                    including AIX, CentOS, RHEL, and Windows. Validate or diagnose and solve 
+                    daily backup tickets on tape and network drives. Verify all virtual images 
+                    are valid and functioning normally. Drive the issue process through all 
+                    steps until completion by contacting proper vendors and initiating third 
+                    party SOPs when necessary.
+                </p>
+                <p class="primary-text">Accomplishments</p>
+                <ul class="secondary-text">
+                    <li>
+                        Automated time difference correction process, bringing resolution of tickets
+                        from 15 an hour to over 300 an hour using basic bash scripting.   
+                    </li>
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="section">
+                <h5 class="primary-text">Client Technology Representative, Geek Squad</h5>
+                <h6 class="secondary-text">Rogers, Arkansas — November 2011 ­to January 2013</h6>
+                <p class="secondary-text">
+                    Diagnose Operating System tickets, including Networking, Malware Removal, and 
+                    hardware repairs and upgrades. Responsible for day to day administration 
+                    work including verbal contact with clients, updating and organizing client 
+                    queues, and task diffusion to the rest of the team.
+                </p>
+                <p class="primary-text">Accomplishments</p>
+                <ul class="secondary-text">
+                    <li>Intel Specialist certified</li>
+                    <li>
+                        Other certifications from companies including  AMD, Toshiba, and Samsung
+                    </li>
+                    <li>
+                        “Cyber Star” award for completing 100+ certification programs
+                    </li>
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="section">
+                <h5 class="primary-text">Tactical Air Traffic Controller, United States Marine Corps</h5>
+                <h6 class="secondary-text">Ginowan City, Okinawa, Japan​ — September 2008 ​to September 2011</h6>
+                <p class="secondary-text">
+                    Air Traffic Controller for Forward Observation Bases, responsible for direct 
+                    communication and direction of mission critical aircraft whose assets ranged in 
+                    the multibillion dollar range. Required ability to maintain focus while 
+                    multitasking between flight plan execution and information dissemination and 
+                    processing of constantly dynamic information influx.
+                </p>
+                <p class="primary-text">Accomplishments</p>
+                <ul class="secondary-text">
+                    <li>
+                        98% training plan completion for junior employees
+                    </li>
+                    <li>
+                        Team Letter of Commendation from Squadron Commander for flawless execution 
+                        of three month training exercise based in Thailand.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock content %}

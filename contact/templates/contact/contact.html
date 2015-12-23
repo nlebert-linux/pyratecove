@@ -1,20 +1,20 @@
-{% extends "blog/base.html" %}
+{% extends "base.html" %}
 {% load staticfiles %}
 
 {% block extra-head %}
-    <link href="{% static 'css/contact.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{% static 'contact/css/contact.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
 {% endblock extra-head %}
 
 {% block content %}
 <div class="parallax-container valign-wrapper">
     
     <div class="parallax">
-        <img src="{{ post.header.url }}">
+        <img src="{{ MEDIA_URL }}contact.jpg">
     </div>
 
 </div>
 
-<div class="container">
+<div class="container section-block">
     <div class="row">
         
         <div class="col s12 m6">
@@ -30,7 +30,6 @@
         </div>
 
         <div class="col s12 m6">
-            <div class="divider"></div>
             <div class="section center">
                 {% if message %}
                 <p class="secondary-text">
