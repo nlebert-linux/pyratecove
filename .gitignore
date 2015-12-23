@@ -1,0 +1,13 @@
+*.egg-info
+
+# Ignore Migrations, except first setup.
+*/migrations/*.py
+*/migrations/*.pyc
+!*/migrations/__init__.py
+!*/migrations/0001_initial.py
+
+# Ignore pyc and pyo files
+*.py[co]
+
+# Ignore sqlite files.
+*.sqlite3

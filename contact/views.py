@@ -10,6 +10,10 @@ def contact(request):
         if contact_form.is_valid():
             contact_form.save()
 
+        else:
+            context = {'contactform': contact_form, 'errors': contact_form.errors}
+            return render(request, 'contact/contact.html', context)
+
         context = {'contactform': contact_form, 'message': True}
 
     else:
