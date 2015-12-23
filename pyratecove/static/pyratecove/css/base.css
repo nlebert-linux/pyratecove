@@ -9,6 +9,24 @@ nav #logo-container img {
     padding: 5px 5px;
 }
 
+.side-nav {
+    background-color: #455A64;
+}
+
+.side-nav li:hover,
+.side-nav li:active {
+    background-color: #CFD8DC;
+}
+
+.side-nav li:hover a,
+.side-nav li:active a {
+    color: #727272;
+}
+
+.side-nav a {
+    color: #FFFFFF;
+}
+
 .section-block {
     padding-top: 60px;
     padding-bottom: 20px;

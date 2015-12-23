@@ -29,7 +29,8 @@
               </ul>
 
               <ul id="nav-mobile" class="side-nav">
-                <li><a href="#">Navbar Link</a></li>
+                <li><a href="{% url 'contact:contact' %}">Contact</a></li>
+                <li><a href="{% url 'contact:resume' %}">Resume</a></li>
               </ul>
               <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             </div>
@@ -48,6 +49,7 @@
       <script type="text/javascript" charset="utf-8" async defer>
         $(document).ready(function () {
           $('.parallax').parallax();
+          $(".button-collapse").sideNav();
         })
       </script>
 
