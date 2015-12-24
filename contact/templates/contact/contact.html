@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load staticfiles %}
+{% load staticfiles material_form %}
 
 {% block extra-head %}
     <link href="{% static 'contact/css/contact.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -38,7 +38,7 @@
                 {% else %}
                 <form action="{% url 'contact:contact' %}" method="POST">
                 {% csrf_token %}
-                {{ contactform }}
+                {% form form=contactform %}{% endform %}
                 <button class="btn" type="submit">Submit</button>
                 </form>
                 {% endif %}

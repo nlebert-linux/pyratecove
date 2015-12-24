@@ -42,6 +42,8 @@ PREREQ_APPS = [
 
 THIRD_PARTY_APPS = [
     'taggit',
+    'material',
+    'material.frontend',
 ]
 
 PROJECT_APPS = [
