@@ -71,3 +71,22 @@ main .btn:hover {
 main .parallax-container .section-block {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+main .container.main-content {
+    padding-top: 80px;
+}
+
+div.blog-header {
+    height: 200px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+p.post-teaser {
+    text-align: center;
+}
+
+a.blog-link {
+    color: #FFFFFF;
+}

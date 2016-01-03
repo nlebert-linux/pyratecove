@@ -2,16 +2,44 @@
 {% load staticfiles %}
 
 {% block content %}
-<div class="container">
+<div class="parallax-container valign-wrapper">
+
+    <div class="container section-block">
+        <div class="row">
+            <h1 class="header center white-text">Blogging the High Seas</h1>
+        </div>
+    </div>
+        
+    <div class="parallax">
+        <img src="{{ MEDIA_URL }}high_seas.jpg">
+    </div>
+
+</div>
+
+<div class="container main-content">
     <div class="row">
         
         {% for post in posts %}
-        <div class="col s12 m6">
-            <div class="divider"></div>
+        <div class="col s12 m12">
+
             <div class="section">
-                <h5><a href="{% url 'blog:detail' post.slug %}">{{ post.title }}</a></h5>
-                <p>{{ post.teaser }}</p>
+                {% if post.header %}
+                <a href="{% url 'blog:detail' post.slug %}" class="blog-link">
+                    <div class="blog-header valign-wrapper" style="background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{ post.header.url }}');">
+
+                        <div class="container">
+                            <h5 class="valign center">{{ post.title }}</h5>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+                <p class="post-teaser">{{ post.teaser }}</p>
             </div>
+
+            {% if forloop.last %}
+            {% else%}
+            <div class="divider"></div>
+            {% endif %}
         </div>
         {% endfor %}
 

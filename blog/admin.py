@@ -20,7 +20,7 @@ class PostAdmin(admin.ModelAdmin):
         'category'
     ]
 
-    list_display_links = ['id', 'slug']
+    list_display_links = ['id', 'title']
     list_filter = ['is_published', ]
     search_fields = ['title', 'content', 'slug']
     list_per_page = 25
