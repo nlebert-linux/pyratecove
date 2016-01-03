@@ -3,13 +3,14 @@ from __future__ import unicode_literals
 from django.db import models
 from django.utils.text import slugify
 from taggit.managers import TaggableManager
+from froala_editor.fields import FroalaField
 
 
 # Create your models here.
 class Post(models.Model):
     title = models.CharField(max_length=256)
     teaser = models.CharField(max_length=256, blank=True, null=True)
-    content = models.TextField()
+    content = FroalaField(blank=True, null=True)
     header = models.ImageField(blank=True, null=True)
 
     # Meta Info

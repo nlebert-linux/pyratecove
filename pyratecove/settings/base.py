@@ -44,6 +44,7 @@ THIRD_PARTY_APPS = [
     'taggit',
     'material',
     'material.frontend',
+    'froala_editor',
 ]
 
 PROJECT_APPS = [
@@ -139,3 +140,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATIC_ROOT = os.path.join(PROJECT_ROOT, "static")
 STATIC_URL = '/static/'
+
+# TINYMCE DEFAULT CONFIG
+FROALA_EDITOR_PLUGINS = (
+    'align', 'char_counter', 'code_beautifier' ,'code_view', 'colors', 'emoticons',
+    'entities', 'file', 'font_family', 'font_size', 'fullscreen', 'image_manager', 'image', 'inline_style',
+    'line_breaker', 'link', 'lists', 'paragraph_format', 'paragraph_style', 'quote', 'save', 'table',
+    'url', 'video'
+)

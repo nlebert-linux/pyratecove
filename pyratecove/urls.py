@@ -25,5 +25,6 @@ urlpatterns = [
     url(r'^blog/', include('blog.urls', namespace="blog")),
     url(r'^contact/', include('contact.urls', namespace="contact")),
     url(r'^admin/', admin.site.urls),
+    url(r'^froala_editor/', include('froala_editor.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
