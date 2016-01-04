@@ -4,7 +4,10 @@ from blog.models import Category, Post
 
 # Create your views here.
 def post_list(request):
-    posts = Post.objects.filter(is_published=True)
+    if request.user.is_superuser:
+        posts = Post.objects.all()
+    else:
+        posts = Post.objects.filter(is_published=True)
 
     context = {'posts': posts}
     return render(request, 'blog/post_list.html', context)
